@@ -3,4 +3,5 @@ module "ec2" {
   sg_ids        = var.sg_ids # This should match the security group ID in your tfvars files
   instance_type = var.instance_type # This should match the instance type in your tfvars files
   tags          = var.tags
+  instances     = var.instances_names # List of instance names to create multiple instances if needed
 }

@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket       = "devops-84s" # This should match the bucket in your tfvars files
-    key          = "workspace-demo"
+    key          = "ec2-module-test"
     region       = "us-east-1"
     encrypt      = true
     use_lockfile = true
